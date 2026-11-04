@@ -1,0 +1,23 @@
+local LOBBY_PLACE_ID = 14916516914
+local queue_on_teleport = queue_on_teleport or (syn and syn.queue_on_teleport) or (fluxus and fluxus.queue_on_teleport)
+
+if queue_on_teleport then
+    queue_on_teleport([[
+        repeat task.wait() until game:IsLoaded()
+        task.wait(6)
+        
+        local LOBBY_ID = 14916516914
+        if game.PlaceId == LOBBY_ID then
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/RetasIsHere/Roblox/refs/heads/main/lobby1"))()
+        else
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/RetasIsHere/Roblox/refs/heads/main/farm4"))()
+        end
+    ]])
+end
+
+
+if game.PlaceId == LOBBY_PLACE_ID then    
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RetasIsHere/Roblox/refs/heads/main/lobby1"))()
+else
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RetasIsHere/Roblox/refs/heads/main/farm4"))()
+end
