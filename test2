@@ -10,7 +10,7 @@ if queue_on_teleport then
         if game.PlaceId == LOBBY_ID then
             loadstring(game:HttpGet("https://raw.githubusercontent.com/RetasIsHere/Roblox/refs/heads/main/lobby1"))()
         else
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/RetasIsHere/Roblox/refs/heads/main/farm4"))()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/RetasIsHere/Roblox/refs/heads/main/farm5"))()
         end
     ]])
 end
@@ -19,5 +19,5 @@ end
 if game.PlaceId == LOBBY_PLACE_ID then    
     loadstring(game:HttpGet("https://raw.githubusercontent.com/RetasIsHere/Roblox/refs/heads/main/lobby1"))()
 else
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/RetasIsHere/Roblox/refs/heads/main/farm4"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RetasIsHere/Roblox/refs/heads/main/farm5"))()
 end
